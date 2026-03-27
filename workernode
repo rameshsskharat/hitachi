@@ -1,0 +1,2 @@
+kubeadm join 172.31.9.85:6443 --token wt0pom.6t1tvj4jqqhevjo4 \
+        --discovery-token-ca-cert-hash sha256:d6ef4de4725b17fe4818fa4d27f9d3ff5309068f3a664ddcb95dfb05f6b5f712
