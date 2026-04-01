@@ -27,3 +27,13 @@ password: qYr8T-EsnAj-DFmxN-ZY2jt
   521  oc delete route p1-route
   522  history
 kubectl run p1 --image=image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
+ 526  kubectl get pods
+  527  kubectl expose pod/p1 --name=p1s1 --type=ClusterIP --port=8080 --target-port=8080 -n trainer
+  528  oc get pods
+  529  oc get svc
+  530  oc run p2 --image=httpd
+  531  oc expose svc/p1s1
+  532  oc get routes
+  533  history
+
+
