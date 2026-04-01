@@ -3,3 +3,27 @@ https://console.redhat.com/openshift/install/aws/user-provisioned
 https://console-openshift-console.apps.hitachi.priartechnoworld.com
 username: "kubeadmin"
 password: qYr8T-EsnAj-DFmxN-ZY2jt
+=========================================
+501  oc login --token=sha256~zckzdZ8VTfFSl5uHHUtd48VZ7CZlLHggt8vItro_fiY --server=https://api.hitachi.priartechnoworld.com:6443
+  502  oc get nodes
+  503  kubectl get nodes
+  504  kubectl create ns trainer
+  505  oc project
+  506  oc projects
+  507  kubectl get ns
+  508  oc project trainer
+  509  kubectl get pods
+  510  history
+  511  oc new-project trainer1
+  512  history
+  513  clear
+  514  oc get pods -n kube-system
+  515  kubectl project
+  516  oc project
+  517  oc project trainer
+  518  oc get service
+  519  oc get routes
+  520  oc delete svc p1s1
+  521  oc delete route p1-route
+  522  history
+kubectl run p1 --image=image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
