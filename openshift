@@ -36,4 +36,12 @@ kubectl run p1 --image=image-registry.openshift-image-registry.svc:5000/openshif
   532  oc get routes
   533  history
 
+539  oc new-app --name=n1app1 docker.io/nginx
+  540  oc get deployment
+  541  oc get service
+  542  oc expose svc/n1app1
+  543  oc get routes
+  544  history
+  545  oc adm policy add-scc-to-user anyuid -z default
+  546  history
 
