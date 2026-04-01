@@ -1,0 +1,5 @@
+curl.exe -LO "https://dl.k8s.io/release/v1.35.0/bin/windows/amd64/kubectl.exe"
+https://console.redhat.com/openshift/install/aws/user-provisioned
+https://console-openshift-console.apps.hitachi.priartechnoworld.com
+username: "kubeadmin"
+password: qYr8T-EsnAj-DFmxN-ZY2jt
