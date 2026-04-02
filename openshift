@@ -47,3 +47,29 @@ kubectl run p1 --image=image-registry.openshift-image-registry.svc:5000/openshif
 ============================
 
 oc create secret generic s1 --from-literal=dbname=hitachidb --from-literal=dbpasswd=redhat --dry-run=client -o yaml
+
+
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db1
+  namespace: trainer
+  labels:
+    cm: cm1
+spec:
+  containers:
+  - name: c1
+    image: docker.io/mysql
+    env:
+    - name: MYSQL_DATABASE
+      valueFrom:
+        secretKeyRef:
+          name: s1
+          key: dbname
+    - name: MYSQL_ROOT_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: s1
+          key: dbpasswd
