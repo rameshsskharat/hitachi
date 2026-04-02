@@ -73,3 +73,22 @@ spec:
         secretKeyRef:
           name: s1
           key: dbpasswd
+===========================================================
+
+username: kharatramesh
+PAT: dckr_pat_1H5kfg23UJ_kE_R98DZafat9MgY
+
+apiVersion: v1
+kind: Pod
+metadata:
+  
+  labels:
+    run: pod1
+  name: hitachipod
+  namespace: trainer
+spec:
+  containers:
+  - image: kharatramesh/private1:gitwebserver1
+    name: c1
+  imagePullSecrets:
+  - name: pullsecret1
