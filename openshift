@@ -44,4 +44,6 @@ kubectl run p1 --image=image-registry.openshift-image-registry.svc:5000/openshif
   544  history
   545  oc adm policy add-scc-to-user anyuid -z default
   546  history
+============================
 
+oc create secret generic s1 --from-literal=dbname=hitachidb --from-literal=dbpasswd=redhat --dry-run=client -o yaml
