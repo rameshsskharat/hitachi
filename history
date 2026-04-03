@@ -1,0 +1,1003 @@
+root@master:~# history
+ 1000  clear
+ 1001  ls
+ 1002  kubectl get deploy -n sanyukta
+ 1003  kubectl get ns
+ 1004  kubectl get deploy -n sanyukta
+ 1005  kubectl get all -n sanyukta
+ 1006  kubectl get ns -n sanyukta
+ 1007  clear
+ 1008  kubectl create deploy --name=app1 --image=nginx --dry-run=client -o yaml . app1s1
+ 1009  kubectl create deploy --name=app1 --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1010  kubectl create deploy --name=web1 --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1011  kubectl create deployment --name=web1 --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1012  kubectl create deployment web1 --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1013  kubectl create deployment nginx --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1014  kubectl create deploy nginx --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1015  clear
+ 1016  kubetcl get svc -n sanyukta
+ 1017  kubectl get svc -n sanyukta
+ 1018  kubectl create deploy nginx --image=nginx --dry-run=client -o yaml . app1s1 -n sanyukta
+ 1019  kubectl create deploy nginx --image=nginx --dry-run=client -o yaml > -n sanyukta
+ 1020  kubectl create deploy nginx1 --image=nginx --dry-run=client -o yaml > web1.yaml -n sanyukta
+ 1021  vi web1.yaml
+ 1022  kubetl apply -f web1.yaml
+ 1023  kubectl apply -f web1.yaml
+ 1024  kubectl expose deploy nginx --name=nginxs1 --type=LoadBalancer --port=80 --target-port=80 -n sanyukta
+ 1025  kubectl get deploy -n sanyukta
+ 1026  kubectl expose deploy/nginx1 --name=nginxs1 --type=LoadBalancer --port=80 --target-port=80 -n sanyukta
+ 1027  kubectl describe svc nginxs1
+ 1028  kubectl describe svc nginxs1 -n anyukta
+ 1029  kubectl describe svc nginxs1 -n sanyukta
+ 1030  vi web1.yaml
+ 1031  kubectl describe svc nginxs1 -n sanyukta
+ 1032  kubectl apply -f web1.yaml
+ 1033  kubectl describe svc nginxs1 -n sanyukta
+ 1034  vi web1.yaml
+ 1035  clear
+ 1036  kubectl get po -n sanyukta
+ 1037  kubectl run pod p1 --image=nginx -n sanyukta -l env=app1
+ 1038  kubectl describe svc nginxs1 -n sanyukta
+ 1039  kubectl run pod p1 --image=nginx -n sanyukta -l app=nginx
+ 1040  kubectl run pod1 p1 --image=nginx -n sanyukta -l app=nginx
+ 1041  kubectl describe svc nginxs1 -n sanyukta
+ 1042  kubectl run pod1 p1 --image=nginx -n sanyukta -l app=nginx1
+ 1043  kubectl run pod2 p1 --image=nginx -n sanyukta -l app=nginx1
+ 1044  kubectl describe svc nginxs1 -n sanyukta
+ 1045  clear
+ 1046  kubetl get deploy -nsanyukta
+ 1047  kubectl get deploy -nsanyukta
+ 1048  ls
+ 1049  vi web1.yaml
+ 1050  kubectl create deply --name=httpd --image=httpd --dry-run=client -o yaml > httpd.yaml -n sanyukta
+ 1051  kubectl create deploy --name=httpd --image=httpd --dry-run=client -o yaml > httpd.yaml -n sanyukta
+ 1052  kubectl create deploy httpd --image=httpd --dry-run=client -o yaml > httpd.yaml -n sanyukta
+ 1053  kls
+ 1054  ls
+ 1055  vi httpd.yaml
+ 1056  kubectl autoscale deploy/nginx1 --cpu-percent=30 --min=2 --max=10 -n sanyukta --dry-run=client -o yaml > hpa1.yaml
+ 1057  kubectl apply -f hpa1.yaml -n sanyukta
+ 1058  kubectl get hpa -n sanyukta
+ 1059  vi web1.yaml
+ 1060  kubectl apply -f web1.yaml
+ 1061  vi web1.yaml
+ 1062  kubectl apply -f web1.yaml
+ 1063  kubectl get hpa -n sanyukta
+ 1064  kubectl autoscale deploy/nginx1 --cpu-percent=30 --min=2 --max=10 -n sanyukta --dry-run=client -o yaml > hpa1.yaml
+ 1065  kubectl apply -f hpa1.yaml -n sanyukta
+ 1066  kubectl get hpa -n sanyukta
+ 1067  vi web1.yaml
+ 1068  kubectl get hpa -n sanyukta
+ 1069  kubectl get pods -n kube-system | grep metrics
+ 1070  kubectl top pods -n sanyukta
+ 1071  clear
+ 1072  cd /svallaba
+ 1073  cd svallaba
+ 1074  kubectl get pods -n svallaba
+ 1075  ls
+ 1076  vi p1.yaml
+ 1077  kubectl apply -f p1.yaml
+ 1078  kubectl get deployment -n svallaba
+ 1079  kubectl create namespace svallaba
+ 1080  kubectl get deployment -n svallaba
+ 1081  kubectl apply -f p1.yaml
+ 1082  kubectl get pods --show loables -n svallaba
+ 1083  kubectl get pods --show labels -n svallaba
+ 1084  kubectl get pods --show-labels -n svallaba
+ 1085  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n svallaba --dry-run=client -oyaml >p1.yaml
+ 1086  kubectl apply -f p1.yaml -n svallaba
+ 1087  get hpa -n svallaba
+ 1088  kubectl get hpa -n svallaba
+ 1089  clear
+ 1090  kubectl get hpa -n svallaba
+ 1091  cat p1.yaml
+ 1092  clear
+ 1093  cd svallaba
+ 1094  kubectl get pods -n svallaba
+ 1095  kubectl exec -it app1 app1-85dcc6f549-g9dz5 -n svallaba --bash
+ 1096  kubectl exec -it app1 app1-85dcc6f549-g9dz5 -n svallaba -- bash
+ 1097  kubectl exec -it app1 app1 -85dcc6f549-g9dz5 -n svallaba -- bash
+ 1098  kubectl exec -it app1 app1-85dcc6f549-g9dz5 -n svallaba -- bash
+ 1099  kubectl exec -it app1-85dcc6f549-g9dz5 -n svallaba -- bash
+ 1100  kubectl exec -it app1app1-85dcc6f549-mcrp2 -n svallaba -- bash
+ 1101  kubectl exec -it app1-85dcc6f549-mcrp2 -n svallaba -- bash
+ 1102  cd /peddireddy
+ 1103  cd /suresh
+ 1104  ls
+ 1105  vi app2 p1.yaml
+ 1106  kubectl auoscale deploy/app1  --cpu-percent=30 --min=2 --max=10 -n suresh --dry-run=client -o yaml
+ 1107  yes
+ 1108  y
+ 1109  kubectl auoscale deploy/app1  --cpu-percent=30 --min=2 --max=10 -n suresh --dry-run=client -o yaml
+ 1110  y
+ 1111  kubectl autoscale deploy/app1  --cpu-percent=30 --min=2 --max=10 -n suresh --dry-run=client -o yaml
+ 1112  kubectl autoscale deploy/app1  --cpu-percent=30 --min=2 --max=10 -n peddireddy  --dry-run=client -o yaml
+ 1113  clear
+ 1114  kubectl autoscale deploy/app1  --cpu-percent=30 --min=2 --max=10 -n peddireddy  --dry-run=client -o yaml
+ 1115  kubectl autoscale deploy/app2  --cpu-percent=30 --min=2 --max=10 -n peddireddy  --dry-run=client -o yaml
+ 1116  kubectl get hpa -n trainer
+ 1117  cd /peddireddy
+ 1118  ls peddireddy
+ 1119  sudo -i
+ 1120  kubectl get nodes
+ 1121  cd /potla
+ 1122  ll
+ 1123  kubectl get ns
+ 1124  kubectl create namespace ns1
+ 1125  kubectl get deploy -n ns1
+ 1126  ll
+ 1127  vim dep.yaml
+ 1128  cd /trainer
+ 1129  ll
+ 1130  cat app1.yaml
+ 1131  ll
+ 1132  cd /potla
+ 1133  ll
+ 1134  vim dep.yaml
+ 1135  ll
+ 1136  kubectl apply -f dep.yaml
+ 1137  kubectl get deploy -n ns1
+ 1138  cat dep.yaml
+ 1139  kubectl expose --name=svc1 deployment/dep2 --type=NodePort  --port=80 --target-port=80 -n ns1
+ 1140  kubectl get svc -n ns1
+ 1141  kubectl describe deploy dep2 -n ns1
+ 1142  kubectl describe svc svc1 -n ns1
+ 1143  kubectl delete deployemnt dep2
+ 1144  kubectl delete deployemnt dep2 -n ns1
+ 1145  kubectl delete deploy dep2 -n ns1
+ 1146  kubectl delete deploy dep1 -n ns1
+ 1147  kubectl get pods -n ns1
+ 1148  kubectl kubectl delete pod p1 -n ns1
+ 1149  kubectl get pods -n ns1
+ 1150  kubectl get pods -n kube-system
+ 1151  kubectl top nodes
+ 1152  ll
+ 1153  vi limits.yaml
+ 1154  kubectl apply -f limits.yaml -n ns1
+ 1155  kubectl get deploy -n ns1
+ 1156  kubectl edit  deploy/app2 -ns1
+ 1157  kubectl edit  deploy/app2 -n ns1
+ 1158  kubectl get deploy -n ns1
+ 1159  kubectl autoscale deploy/app2 --cpu-percent=30 --min=2 --max=10 -n ns1 --dry-run=client -o yaml > hpa1.yaml
+ 1160  cat hpa1.yaml
+ 1161  vim hpa1.yaml
+ 1162  kubectl apply -f hpa1.yaml
+ 1163  kubectl get hpa -n ns1
+ 1164  kubectl get hpa1 -n ns1
+ 1165  kubectl get deploy -n ns1
+ 1166  kubectl get hpa -n ns1
+ 1167  kubectl get nodes -n ns1
+ 1168  kubectl get pods  -n ns1
+ 1169  cat hpa1.yaml
+ 1170  vi  hpa1.yaml
+ 1171  kubectl apply -f hpa1.yaml
+ 1172  kubectl get hpa -n ns1
+ 1173  kubectl get HPA  -n ns1
+ 1174  kubectl get deploy -n ns1
+ 1175  vim hpa1.yaml
+ 1176  ll
+ 1177  vim hpa1.yaml
+ 1178  kubectl apply -f hpa1.yaml
+ 1179  kubectl get hpa -n ns1
+ 1180  kubeclt get deploy -n ns1
+ 1181  kubectl get deploy -n ns1
+ 1182  cat hpa1.yaml
+ 1183  kubectl autoscale deploy/app2 --cpu-percent=30 --min=2 --max=10 -n ns1 --dry-run=client -o yaml > hpa1.yaml
+ 1184  cat hpa1.yaml
+ 1185  kubectl autoscale deploy/app2 --cpu-percent=30 --min=2 --max=10 -n ns1
+ 1186  kubectl get hpa -n ns1
+ 1187  kubectl autoscale deploy/app2 --cpu-percent=30 --min=2 --max=10 --namespace ns1 --dry-run=client -o yaml > hpa1.yaml
+ 1188  cat hpa1.yaml
+ 1189  kubectl autoscale deploy/app2 --cpu-percent=30 --min=2 --max=10 --namespace=ns1 --dry-run=client -o yaml > hpa1.yaml
+ 1190  cat hpa1.yaml
+ 1191  kubectl autoscale deploy/app2 -n ns1 --cpu-percent=30 --min=2 --max=10  --dry-run=client -o yaml > hpa1.yaml
+ 1192  cat hpa1.yaml
+ 1193  cat limits.yaml
+ 1194  kubectl get nodes -o wide
+ 1195  kubectl get deploy -n ns
+ 1196  kubectl get deploy -n ns1
+ 1197  kubectl delete deploy app2 -n ns1
+ 1198  kunectl get hpa -n ns1
+ 1199  kubecctl get nodes
+ 1200  kubectl run p1 --image=httpd -n ns1 -l env=app1
+ 1201  kubectl get pods -n ns1
+ 1202  kubectl edit p1 -n ns1
+ 1203  kubectl edit pod p1 -n ns1
+ 1204  kubectl edit p1 -n ns1
+ 1205  kubectl edit pod p1 -n ns1
+ 1206  watch kubectl get pods -n trainer
+ 1207  clear
+ 1208  kubectl get deploy -n trainer
+ 1209  cd /trainer/
+ 1210  vi app1.yaml
+ 1211  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n trainer --dry-run=client -o yaml
+ 1212  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n trainer --dry-run=client -o yaml > hpa1.yaml
+ 1213  history
+ 1214  kubectl apply -f hpa1.yaml -n trainer
+ 1215  kubectl get hpa -n trainer
+ 1216  watch kubectl get hpa -n trainer
+ 1217  mkdir Rajesh
+ 1218  ls -l
+ 1219  cd Rajesh
+ 1220  ls -l
+ 1221  kubectl get ns
+ 1222  kubectl create namespace rajesh
+ 1223  vi app1.yaml
+ 1224  kubectl apply -f app1.yaml
+ 1225  kuectl get pods --show-labels -a rajesh
+ 1226  kuectl get pods --show-labels -n rajesh
+ 1227  kubectl get pods --show-labels -n rajesh
+ 1228  vi app1s1.yaml
+ 1229  kubectl get hpa -n rajesh
+ 1230  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n rajesh --dryrun-client -o yaml > hpa1.yaml
+ 1231  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n rajesh --dryrun=client -o yaml > hpa1.yaml
+ 1232  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n rajesh --dr-run=client -o yaml > hpa1.yaml
+ 1233  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n rajesh --dry-run=client -o yaml > hpa1.yaml
+ 1234  kubectl apply -f hpa1.yaml -n rajesh
+ 1235  kubectl get hpa -n rajesh
+ 1236  kubectl exec -it app1-9d74bfb7f-n8727 -n rajesh -- bash
+ 1237  watch kubectl get pods -o wide -n rajesh
+ 1238  top
+ 1239  history
+ 1240  cd /satya
+ 1241  ll
+ 1242  ls -larth
+ 1243  kubectl get pods --show-labels -n satya
+ 1244  cat app1.yaml
+ 1245  watch kubectl describe svc app1s1 -n satya
+ 1246  vi app1
+ 1247  ls -larth
+ 1248  vi app1.yaml
+ 1249  cat app1.yaml
+ 1250  kubectl run p1 --image=nginx -n satya -l env=app1
+ 1251  kubectl run p1 --image=httpd -n satya -l env=app1
+ 1252  ls
+ 1253  ll
+ 1254  kubectl get all
+ 1255  cat app1.yaml
+ 1256  vi app1.yaml
+ 1257  kubectl run p1 --image=httpd -n satya -l env=app1
+ 1258  ls -larth
+ 1259  kubectl get all
+ 1260  cd
+ 1261  kubectl get all
+ 1262  top
+ 1263  kubectl get pods -n satya
+ 1264  top
+ 1265  cd /satya
+ 1266  ll
+ 1267  cat app1.yaml
+ 1268  kubectl apply -f -n satya
+ 1269  history
+ 1270  kubectl get deployment -n satya
+ 1271  kubectl autoscale deploy/app1 --cpu-percent=20 --min=2  --max=10 -n satya --dry-run=client -o yaml >hpa2.yaml
+ 1272  kubectl autoscale deploy/app1 --cpu-percent=20 --min=2  --max=10 -n trainer --dry-run=client -o yaml >hpa2.yaml
+ 1273  cat hpa2.yaml
+ 1274  kubectl get pods -n satya
+ 1275  ls
+ 1276  ls -larth
+ 1277  cat app1.yaml
+ 1278  kubectl apply -f app1.yaml
+ 1279  cat app1.yaml
+ 1280  kubectl get pods -n trainer
+ 1281  cd
+ 1282  cd /trainer
+ 1283  ll
+ 1284  ls -larth
+ 1285  cat app1.yaml
+ 1286  cat p1.yaml
+ 1287  ls
+ 1288  cd ..
+ 1289  ll
+ 1290  cd suresh/
+ 1291  ll
+ 1292  cd ..
+ 1293  cd soumith/
+ 1294  ll
+ 1295  cd ..
+ 1296  cd ranjith
+ 1297  cd ranjit
+ 1298  cd Ranjith/
+ 1299  ll
+ 1300  cd ..
+ 1301  cd satya/
+ 1302  ll
+ 1303  cd ..
+ 1304  cd sanyukta/
+ 1305  ll
+ 1306  cd ..
+ 1307  cd pavan/
+ 1308  ll
+ 1309  cd ..
+ 1310  ll
+ 1311  cd satya
+ 1312  ll
+ 1313  ls -larth
+ 1314  cd ..
+ 1315  cd potla/
+ 1316  ll
+ 1317  cd ..
+ 1318  cd arun/
+ 1319  ll
+ 1320  cd bosch/
+ 1321  ll
+ 1322  cd ..
+ 1323  cd
+ 1324  top
+ 1325  kubectl get nodes
+ 1326  kubectl get node worker2 --show-labels
+ 1327  kubectl get nodes
+ 1328  kubectl get pods -o wide -n satya
+ 1329  kubectl get pods -o wide -n arun
+ 1330  kubectl get pods -o wide -n pavan
+ 1331  kubectl get pods
+ 1332  kubectl get all pods
+ 1333  kubectl get all
+ 1334  cd /trainer
+ 1335  ls
+ 1336  ls -larth
+ 1337  cp -r bosch /satya
+ 1338  cd ..
+ 1339  cd /satya
+ 1340  ll
+ 1341  ls -larth
+ 1342  cd bosch
+ 1343  ll
+ 1344  cd yamls
+ 1345  ll
+ 1346  cat nginx-deployment.yaml
+ 1347  cd ..
+ 1348  ll
+ 1349  cat quota.yaml
+ 1350  cat p2.yaml
+ 1351  cat hpa2.yaml
+ 1352  cd ..
+ 1353  top
+ 1354  kubectl create deployment app1 --image=httpd --replicas=5 -n satya
+ 1355  cd satya
+ 1356  kubectl create deployment app1 --image=httpd --replicas=5 -n satya
+ 1357  kubectl describe namespace satya
+ 1358  kubectl describe namespaces satya
+ 1359  kubectl describe satya
+ 1360  ll
+ 1361  top
+ 1362  kubectl get pods -A -o -wide
+ 1363  kubectl get pods -A -o - wide
+ 1364  cd
+ 1365  kubectl get nodes
+ 1366  kubectl get namespaces
+ 1367  kubectl create namespace satya
+ 1368  kubectl get namespaces
+ 1369  cd /satya
+ 1370  ll
+ 1371  kubcectl get deployments
+ 1372  kubectl get deployments
+ 1373  kubectl create deployment nginx --image=nginx -n satya
+ 1374  kubectl describe deployment nginx
+ 1375  kubectl describe deployment deployment.apps/nginx
+ 1376  kubectl describe deployment nginx
+ 1377  kubectl get pods -n satya
+ 1378  kubectl scale deployment nginx --replicas=3
+ 1379  kubectl get deployments
+ 1380  top
+ 1381  cd /
+ 1382  cd
+ 1383  ls
+ 1384  cd praveen1/
+ 1385  ll
+ 1386  cd ..
+ 1387  cd GOPI/
+ 1388  ll
+ 1389  cd ..
+ 1390  cd satya
+ 1391  cd /satya
+ 1392  ll
+ 1393  top
+ 1394  cd /trainer/
+ 1395  kubectl delete -f app1.yaml
+ 1396  kubectl delete -f hpa1.yaml -n trainer
+ 1397  vi app1.yaml
+ 1398  kubectl get nodes
+ 1399  kubectl label node worker2 disk=ssd
+ 1400  kubectl get node worker2 --show-labels
+ 1401  kubectl delete pod p1 -n trainer
+ 1402  kubectl apply -f app1.yaml
+ 1403  vi app1.yaml
+ 1404  kubectl apply -f app1.yaml
+ 1405  vi app1.yaml
+ 1406  kubectl apply -f app1.yaml
+ 1407  vi app1.yaml
+ 1408  kubectl apply -f app1.yaml
+ 1409  kubectl delete  -f app1.yaml
+ 1410  clear
+ 1411  vi bosch/yamls/nodeaffinity1-deployment.yaml
+ 1412  kubectl apply -f bosch/yamls/nodeaffinity1-deployment.yaml -n trainer
+ 1413  kubectl delete -f bosch/yamls/nodeaffinity1-deployment.yaml -n trainer
+ 1414  kubectl delete -f bosch/yamls/nodeaffinity-deployment.yaml
+ 1415  vi bosch/yamls/nodeaffinity-deployment.yaml
+ 1416  kubectl apply -f bosch/yamls/nodeaffinity-deployment.yaml  -n trainer
+ 1417  kubectl delete  -f bosch/yamls/nodeaffinity-deployment.yaml  -n trainer
+ 1418  vi bosch/yamls/nodeaffinity-deployment.yaml
+ 1419  kubectl label node worker1 disk1=ssd1
+ 1420  clear
+ 1421  vi bosch/yamls/nodeaffinity-deployment.yaml
+ 1422  kubectl apply -f bosch/yamls/nodeaffinity-deployment.yaml -n trainer
+ 1423  kubectl get pods -o wide -n trainer
+ 1424  vi bosch/yamls/nodeaffinity-deployment.yaml
+ 1425  clear
+ 1426  vi bosch/yamls/nodeaffinity-deployment.yaml
+ 1427  kubectl apply -f bosch/yamls/nodeaffinity-deployment.yaml -n trainer
+ 1428  kubectl describe node worker1 | grep -i taint
+ 1429  cd /trainer/
+ 1430  cp bosch/yamls/tt-pod1.yaml
+ 1431  cp bosch/yamls/tt-pod1.yaml .
+ 1432  vi tt-pod1.yaml
+ 1433  cat tt-pod1.yaml
+ 1434  vi app1.yaml
+ 1435  kubectl apply -f app1.yaml -n trainer
+ 1436  kubectl get pods -n trainer
+ 1437  kubectl delete deploy app1 -n trainer
+ 1438  clear
+ 1439  kubectl apply -f app1.yaml -n trainer
+ 1440  kubectl get pods -o wide -n trainer
+ 1441  clear
+ 1442  kubectl delete  -f app1.yaml -n trainer
+ 1443  kubectl get nodes
+ 1444  kubectl uncordon worker3
+ 1445  kubectl get pods -n ranjith
+ 1446  kubectl cordon worker2
+ 1447  kubectl get nodes
+ 1448  kubectl cordon drain
+ 1449  kubectl drain worker2
+ 1450  kubectl uncordon worker2
+ 1451  kubectl get nodes
+ 1452  kubectl cordon worker2
+ 1453  kubectl uncordon worker2
+ 1454  watch kubectl get pods -n trainer -o wide
+ 1455  kubectl get deploy -n trainer
+ 1456  kubectl delete deploy nginx-deployment -n trainer
+ 1457  kubectl get pods -o wide -n trainer
+ 1458  kubectl delete deploy nginx-deployment1 -n trainer
+ 1459  clear
+ 1460  kubectl run p1 --image=httpd -l app=hitachi -n trainer
+ 1461  kubectl get pods -n trainer --show-label -o wide
+ 1462  kubectl get pods -n trainer --show-labels -o wide
+ 1463  cd /trainer/
+ 1464  vi bosch/yamls/podaffinity1-deployment.yaml
+ 1465  kubectl apply -f bosch/yamls/podaffinity1-deployment.yaml -n trainer
+ 1466  kubectl get pods -n trainer --show-labels -o wide
+ 1467  clear
+ 1468  kubectl get pods -n trainer -o wide
+ 1469  kubectl delete -f nginx1-deployment -n trainer
+ 1470  kubectl get pods -n trainer -o wide
+ 1471  kubectl delete deploy nginx1-deployment -n trainer
+ 1472  kubectl delete pod p1 -n trainer
+ 1473  clear
+ 1474  kubectl describe node master | grep -i taint
+ 1475  kubectl untaint node master node-role.kubernetes.io/control-plane-
+ 1476  kubectl taint node master node-role.kubernetes.io/control-plane-
+ 1477  kubectl lable node worker1 disk-
+ 1478  kubectl label node worker1 disk-
+ 1479  kubectl label node worker1 disk1-
+ 1480  kubectl label node worker2 disk-
+ 1481  kubectl describe node master | grep -i taint
+ 1482  kubectl describe node worker1 | grep -i taint
+ 1483  kubectl describe node worker2 | grep -i taint
+ 1484  kubectl describe node worker3 | grep -i taint
+ 1485  clear
+ 1486  kubectl create deployment app1 --image=httpd --replicas=5 -n trainer
+ 1487  kubectl get pods -o wide -n trainer
+ 1488  clear
+ 1489  kubectl taint node master node-role.kubernetes.io/control-plane:NoSchedule
+ 1490  kubectl get pods -n trainer -o wide
+ 1491  kubectl taint node worker1 dish=vadapav:NoExecute
+ 1492  kubectl get pods -n trainer -o wide
+ 1493  watch kubectl get pods -o wide -n trainer
+ 1494  kubectl get pods -o wide -n trainer
+ 1495  cd /trainer/
+ 1496  kubectl delete -f bosch/yamls/nodeaffinity-deployment.yaml -n trainer
+ 1497  kubectl delete -f bosch/yamls/nodeaffinity1-deployment.yaml -n trainer
+ 1498  kubectl delete -f bosch/yamls/nodeaffinity-deployment.yaml -n trainer
+ 1499  kubectl delete -f bosch/yamls/nodeaffinity-deployment.yaml
+ 1500  kubectl delete deploy nginx-deployment -n trainer
+ 1501  kubectl create namespace amaddukuri
+ 1502  cd /arun/
+ 1503  ls -l
+ 1504  vi dep5.yaml
+ 1505  kubectl apply -f dep5.yaml
+ 1506  kubectl get deployment -n amaddukuri
+ 1507  kubectl expose deployment/app --name=app1s1 --type=NodePort --port=80 --target-port=80 -n amaddukuri --dry-run=client -o yaml > app1s1.yml
+ 1508  ls -l
+ 1509  less app1s1.yml
+ 1510  nano app1s1.yml
+ 1511  vi app1s1.yml
+ 1512  kubectl apply -f app1s1.yml
+ 1513  kubectl get svc -n amaddukuro
+ 1514  kubectl get svc -n amaddukuri
+ 1515  watch kubectl describle svc -n amaddukuri
+ 1516  kubectl describle svc -n amaddukuri
+ 1517  kubectl describe svc -n amaddukuri
+ 1518  watch kubectl describe svc -n amaddukuri
+ 1519  kubectl create namespace soumith
+ 1520  cd /sou
+ 1521  cd /soumith/
+ 1522  ls
+ 1523  vi dep.yaml
+ 1524  kubectl apply -f dep.yaml
+ 1525  kubectl get pods --show-labels -n soumith
+ 1526  kubectl get deploy -n soui
+ 1527  kubectl get deploy -n soumith
+ 1528  kubectl get pods --show-labels -n soumith
+ 1529  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l app=newtest -n soumith
+ 1530  kubectl get svc -n soumith
+ 1531  kubectl get pods -n soumith
+ 1532  ls
+ 1533  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l app=newtest -n soumith > appls1.yaml
+ 1534  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l app=newtest -n soumith > appls2.yaml
+ 1535  kubectl expose deploy/app1 --name=app1s2 --type=NodePort --port=80 --target-port=80 -l app=newtest -n soumith > appls2.yaml
+ 1536  ls
+ 1537  cat appls2.yaml
+ 1538  vi appls2.yaml
+ 1539  kubectl get svc -n soumith
+ 1540  kubectl delete svc appls2 -n soumith
+ 1541  clear
+ 1542  kubectl get deploy -n soumith
+ 1543  ls
+ 1544  vi dep.yaml
+ 1545  kubectl apply -f dep.yaml
+ 1546  vi dep.yaml
+ 1547  kubectl apply -f dep.yaml
+ 1548  kubectl autoscale deploy/app1 --cpu-percent=30 --min=2 --max=10 -n soumith --dry-run=client -o yaml > hpa1.yaml
+ 1549  ls
+ 1550  cat hpa1.yaml
+ 1551  kubectl apply -f hpa1.yaml
+ 1552  kubectl get hpa -n trainer
+ 1553  ls
+ 1554  cat dep.yaml
+ 1555  kubectl get pods -n soumith
+ 1556  kubectl exec -it app1-7b9c8f7b99-jztn8 bash
+ 1557  kubectl exec -it app1-7b9c8f7b99-jztn8 -n soumith --bash
+ 1558  kubectl exec -it app1-7b9c8f7b99-jztn8 -n soumith -- bash
+ 1559  clear
+ 1560  kubectl get nodes
+ 1561  kubectl cordon worker3
+ 1562  kubectl get nodes
+ 1563  kubectl get pods -A
+ 1564  kubectl get pods -A -o wide
+ 1565  worker3clear
+ 1566  clear
+ 1567  kubectl drain worker3
+ 1568  kubectl drain worker3 --force --ignore-daemonsets
+ 1569  kubectl get pods -A -o wide
+ 1570  kubectl describe node worker1 | grep -i taint
+ 1571  kubectl taint node worker1 dish-
+ 1572  kubectl describe node worker1 | grep -i taint
+ 1573  kubectl describe node worker2 | grep -i taint
+ 1574  kubectl describe node worker3 | grep -i taint
+ 1575  kubectl get nodes
+ 1576  clear
+ 1577  kubeadm upgrade plan
+ 1578  kubectl get nodes
+ 1579  clear
+ 1580  kubeadm upgrade apply v1.33.10
+ 1581  kubeadm upgrade plan
+ 1582  clear
+ 1583  kubectl get pods -n kube-system
+ 1584  # apiserver
+ 1585  # etcd
+ 1586  # cni
+ 1587  # controller
+ 1588  # kube-proxy
+ 1589  # schedular
+ 1590  kubectl get pods -n kube-system -o wide
+ 1591  clear
+ 1592  cd /ranjith
+ 1593  kubectl get pods -n ranjith
+ 1594  cd /Ranjith/
+ 1595  ls
+ 1596  vi appl.yaml
+ 1597  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l dish=vadapav -n Ranjith
+ 1598  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l dish=vadapav -n ranjith
+ 1599  kubectl apply -f appl.yaml
+ 1600  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l dish=vadapav -n Ranjith
+ 1601  kubectl expose deploy/app1 --name=app1s1 --type=NodePort --port=80 --target-port=80 -l dish=vadapav -n ranjith
+ 1602  top
+ 1603  kubectl get nodes
+ 1604  top
+ 1605  clear
+ 1606  kubectl get nodes
+ 1607  cd /openshift
+ 1608  ls
+ 1609  clear
+ 1610  kubectl get ns
+ 1611  kubectl get pods
+ 1612  kubectl get pods -n ranjith
+ 1613  kubectl delete pod app1-6bbfb797f-894fh
+ 1614  kubectl delete pod app1-6bbfb797f-894fh -n ranjith
+ 1615  kubectl get pods -n ranjith
+ 1616  kubectl delete pod -l app=app1 -n ranjith
+ 1617  kubectl delete deployment app1 -n ranjith
+ 1618  kubectl get pods -n ranjith
+ 1619  cd /Ranjith/
+ 1620  clear
+ 1621  kubectl get pods -n all
+ 1622  kubectl get pods -n ?
+ 1623  kubectl get pods --help
+ 1624  kubectl get namespaces
+ 1625  kubectl get pods -n kube-system
+ 1626  kubectl get pods -n kube-scheduler-master
+ 1627  kubectl edit pods -n kube-scheduler-master
+ 1628  clear
+ 1629  kubectl get nodes
+ 1630  clear
+ 1631  cd /home/
+ 1632  ls
+ 1633  vi install-config.yaml
+ 1634  cd /hitachi-openshift
+ 1635  ls -a
+ 1636  ls -al
+ 1637  cd /hitachi-openshift1/
+ 1638  ls -al
+ 1639  pwd
+ 1640  oc get nodes
+ 1641  oc project
+ 1642  oc projects
+ 1643  oc project trainer
+ 1644  kubectl get pods -n --all
+ 1645  oc new-project nithin
+ 1646  oc project nithin
+ 1647  kubect get pods
+ 1648  kubectl get pods
+ 1649  oc get pods -n kube-system
+ 1650  oc project kube-system
+ 1651  oc get pods
+ 1652  oc project nithin1
+ 1653  oc get service
+ 1654  oc get routes
+ 1655  oc delete svc service1
+ 1656  oc delete route route1
+ 1657  kubectl run nithin2 --image=image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
+ 1658  kubectl get pods
+ 1659  kubectl expose pods/nithin1 --type=ClusterIP --port=8080 --target-port=8080 -n nithin1
+ 1660  kubectl expose pods/nithin2 --type=ClusterIP --port=8080 --target-port=8080 -n nithin2
+ 1661  kubectl expose pods/nithin2 --type=ClusterIP --port=8080 --target-port=8080 -n nithin1
+ 1662  oc expose svc/nithin2
+ 1663  oc get svc
+ 1664  oc get routes
+ 1665  oc new-app --name=app1 docker.io/nginx
+ 1666  oc get pods
+ 1667  oc get deployments
+ 1668  oc get service
+ 1669  oc expose svc/app1
+ 1670  oc get routes
+ 1671  oc adm policy add-scc-to-user anyuid -z default
+ 1672  oc new-app --name=app2 kharatramesh/vadapavimages:biryani
+ 1673  oc get pods
+ 1674  oc get svc
+ 1675  oc expose svc/app2
+ 1676  oc new-app --name=app3 prom/prometheus
+ 1677  oc get svc
+ 1678  oc get pods
+ 1679  oc expose svc/app3
+ 1680  oc get pods
+ 1681  mkdir /hitachi-openshift
+ 1682  cd /hitachi-openshift/
+ 1683  ls
+ 1684  wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-install-linux.tar.gz
+ 1685  ls
+ 1686  tar -zxvf openshift-install-linux.tar.gz
+ 1687  ls -lh
+ 1688  clear
+ 1689  wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz
+ 1690  ls
+ 1691  tar -xvzf openshift-client-linux.tar.gz
+ 1692  ls
+ 1693  cp kubectl oc /usr/bin/
+ 1694  ls -l oc
+ 1695  ls -l kubectl
+ 1696  clear
+ 1697  ls
+ 1698  mkdir /hitachi-openshift1
+ 1699  ./openshift-install create install-config --dir=/hitachi-openshift1
+ 1700  cd /hitachi-openshift1/
+ 1701  ls
+ 1702  cp install-config.yaml /tmp
+ 1703  cd /tmp/
+ 1704  vi install-config.yaml
+ 1705  cp install-config.yaml /hitachi-openshift1/
+ 1706  cd /hitachi-openshift
+ 1707  ls
+ 1708  ./openshift-install create cluster --dir=/hitachi-openshift1 --log-level=debug
+ 1709  clear
+ 1710  oc login --token=sha256~zckzdZ8VTfFSl5uHHUtd48VZ7CZlLHggt8vItro_fiY --server=https://api.hitachi.priartechnoworld.com:6443
+ 1711  cd /openshift
+ 1712  ls
+ 1713  cd ..
+ 1714  cd openshift1
+ 1715  ll
+ 1716  cd
+ 1717  cd /hitachi-openshift
+ 1718  ll
+ 1719  cd ..
+ 1720  cd hitachi-openshift1
+ 1721  ll
+ 1722  top
+ 1723  oc get sc
+ 1724  oc get sc gp2-csi -o yaml
+ 1725  cd /trainer/bosch/yamls/
+ 1726  ls
+ 1727  vi sts-with-volumeTemplate.yaml
+ 1728  clear
+ 1729  cd /trainer/bosch/yamls/
+ 1730  cat sts-mysql-pods.yaml
+ 1731  top
+ 1732  cd /ravi
+ 1733  clear
+ 1734  watch kubectl get pods -n trainer
+ 1735  kubectl get nodes
+ 1736  cd /ravi
+ 1737  ls -ltr
+ 1738  yum install httpd-tools -y
+ 1739  top
+ 1740  apt install apache2-utils
+ 1741  htpasswd --help
+ 1742  ls
+ 1743  clear
+ 1744  cd /trainer
+ 1745  kubectl create deployment ds1 --image=nginx -n trainer --dry-run=client -o yaml
+ 1746  kubectl create deployment ds1 --image=nginx -n trainer --dry-run=client -o yaml > ds1.yaml
+ 1747  vi ds1.yaml
+ 1748  kubectl get nodes
+ 1749  kubectl apply -f ds1.yaml
+ 1750  kubectl get pods -n trainer -o wide
+ 1751  clear
+ 1752  kubectl get pods -o wide -n kube-system
+ 1753  oc get pods
+ 1754  oc project
+ 1755  kubectl config get-contexts
+ 1756  kubectl config use-context  kubernetes-admin@kubernetes
+ 1757  kubectl get nodes
+ 1758  kubectl apply -f ds1.yaml
+ 1759  kubectl get pods -o wide -n trainer
+ 1760  history
+ 1761  cat ds1.yaml
+ 1762  kubectl get pods -o wide -n kube-system
+ 1763  kubectl get ds -n kube-system
+ 1764  clear
+ 1765  ccd bosch/
+ 1766  cd bosch/yamls/
+ 1767  ls
+ 1768  vi initcontainers.yaml
+ 1769  kubectl apply -f initcontainers.yaml -n trainer
+ 1770  watch kubectl get pods -n trainer
+ 1771  kubectl describe pod myapp-pod2
+ 1772  kubectl describe pod myapp-pod2 -n trainer
+ 1773  cat initcontainers.yaml
+ 1774  clear
+ 1775  cd /etc/kubernetes/manifests/
+ 1776  ls
+ 1777  kubectl run p1 --image=httpd -n trainer --dry-run=client -o yaml > p1.yaml
+ 1778  mv p1.yaml /home/
+ 1779  cp /home/p1.yaml .
+ 1780  mv etcd.yaml /home/
+ 1781  CP /home/etcd.yaml .
+ 1782  cp /home/etcd.yaml .
+ 1783  oc get nodes
+ 1784  kubectl get contexts
+ 1785  clear
+ 1786  cd /trainer/bosch/
+ 1787  cd yamls/
+ 1788  cat job.yaml
+ 1789  oc get namespace -A
+ 1790  oc get ns
+ 1791  oc get pods -n open?
+ 1792  oc get ns -A
+ 1793  oc get ns --help
+ 1794  oc get crds
+ 1795  clear
+ 1796  ls
+ 1797  cd /
+ 1798  ls
+ 1799  cd trainer
+ 1800  ls
+ 1801  cd bosch
+ 1802  ls
+ 1803  cd yamls
+ 1804  ls
+ 1805  cat pvc-oci.yaml
+ 1806  git --version
+ 1807  oc get n -A
+ 1808  oc get namespace -A
+ 1809  sudo -i
+ 1810  clear
+ 1811  oc projects
+ 1812  kubectl config get-contexts
+ 1813  kubectl config use-contexts kubernetes-admin@kubernetes
+ 1814  kubectl config use-context kubernetes-admin@kubernetes
+ 1815  kubectl get no
+ 1816  cd /trainer/
+ 1817  yum install httpd-tools -y
+ 1818  apt  install httpd-tools -y
+ 1819  apt update
+ 1820  apt  install httpd-tools -y
+ 1821  apt  install apache2-utils -y
+ 1822  clear
+ 1823  htpasswd --help
+ 1824  clear
+ 1825  htpasswd -c -B -b users.htpasswd user1 123
+ 1826  cat users.htpasswd
+ 1827  htpasswd -B -b users.htpasswd user2 123
+ 1828  htpasswd -B -b users.htpasswd user3 redhat
+ 1829  htpasswd -B -b users.htpasswd user4 openshift
+ 1830  htpasswd -B -b users.htpasswd user5 openshift
+ 1831  cat users.htpasswd
+ 1832  htpasswd --help
+ 1833  cat users.htpasswd
+ 1834  clear
+ 1835  aot install https-tools -y
+ 1836  apt install https-tools -y
+ 1837  apt install httpd-tools -y
+ 1838  htpasswd -c -B -b users.htpasswd user10 Open
+ 1839  cd grk
+ 1840  ls -lh
+ 1841  cd GOPI
+ 1842  ls
+ 1843  htpasswd --help
+ 1844  htpasswd -c -B -b users.htpasswd user1 123
+ 1845  cat users.htpasswd
+ 1846  htpasswd -B -b users.htpasswd user2 123
+ 1847  htpasswd -B -b users.htpasswd user4 123
+ 1848  htpasswd -B -b users.htpasswd user5 123
+ 1849  cat users.htpasswd
+ 1850  oc get secrets
+ 1851  oc get secrets -n nithin1
+ 1852  oc project nithin1
+ 1853  clear
+ 1854  oc get ns
+ 1855  oc create project nithin`
+ 1856  oc create project nithin1
+ 1857  oc create ?
+ 1858  oc create --help
+ 1859  oc project --help
+ 1860  oc create ns nithin1
+ 1861  oc project nithin1
+ 1862  ls
+ 1863  oc get secrets
+ 1864  oc get ns
+ 1865  clear
+ 1866  su -
+ 1867  oc get roles
+ 1868  oc get nodes
+ 1869  oc get ns
+ 1870  clear
+ 1871  kubectl get no
+ 1872  kubectl config contexts
+ 1873  kubectl config get contexts
+ 1874  kubectl config get -contexts
+ 1875  kubectl get - contexts
+ 1876  kubectl get -contexts
+ 1877  kubectl get contexts
+ 1878  kubectl config get contexts
+ 1879  kubectl config get-contexts
+ 1880  kubectl config use context kubernetes-admin@kubernetes
+ 1881  kubectl config use-context kubernetes-admin@kubernetes
+ 1882  oc projects
+ 1883  oc project
+ 1884  oc project sanyukta
+ 1885  oc project
+ 1886  clear
+ 1887  kubectl create secret generic s1 --from-literal=dbname=db1 --from-literal=dbpasswd=123
+ 1888  top
+ 1889  oc get pods
+ 1890  cd /satya
+ 1891  cd bosch/
+ 1892  ll
+ 1893  cd yamls/
+ 1894  ll
+ 1895  cat initcontainers.yaml
+ 1896  cd ..
+ 1897  cd bosch/
+ 1898  cd yamls/
+ 1899  ll
+ 1900  cd ..
+ 1901  ls
+ 1902  ls -larth
+ 1903  vi efs-pvc1.yaml
+ 1904  top
+ 1905  cd
+ 1906  top
+ 1907  useradd -m jean
+ 1908  cd /home/jean/
+ 1909  openssl genrsa -out jean.key 2048
+ 1910  ###touch /root/.rnd  ### for ubuntu
+ 1911  openssl req -new -key jean.key -out jean.csr -subj "/CN=jean"
+ 1912  openssl x509 -req -in jean.csr -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out jean.crt -days 500
+ 1913  mkdir .certs && mv jean.crt jean.key .certs
+ 1914  cd .certs/
+ 1915  ls
+ 1916  cat jean.crt
+ 1917  cd GOPI
+ 1918  ls
+ 1919  vi secret.yaml
+ 1920  oc apply -f secret.yaml
+ 1921  oc get secret db-secret
+ 1922  oc describe secret db-secret
+ 1923  oc new-project my-app-dev
+ 1924  oc new-app my-app-dev
+ 1925  sudo dnf install -y podman wget git tar
+ 1926  wget https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux/oc.tar.gz
+ 1927  tar -xvf oc.tar.gz
+ 1928  oc version
+ 1929  crc setup
+ 1930  clear
+ 1931  kubectl create deployment app1 --image=httpd
+ 1932  kubectl get deploy
+ 1933  kubectl get rs
+ 1934  kubectl get pod
+ 1935  kubectl edit deployment/app1
+ 1936  kubectl get rs
+ 1937  kubectl get pod
+ 1938  kubectl patch --help
+ 1939  kubectl rollout history deploy/app1
+ 1940  apt-get install nvme-cli
+ 1941  nvme -cli
+ 1942  nvmi-cli
+ 1943  nvme_list_opts
+ 1944  nvme list
+ 1945  oc get hspc
+ 1946  kubectl apply -f hitachi-csi.yaml
+ 1947  oc get pods -n kube-system
+ 1948  kubectl get sc
+ 1949  oc get sc
+ 1950  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+ 1951  kubectl get pods -n ingress-nginx
+ 1952  oc get svc -n ingress-nginx
+ 1953  clear
+ 1954  cd /trainer/bosch/yamls/
+ 1955  ls
+ 1956  clear
+ 1957  cat security-cxt-readonly.yaml
+ 1958  kubectl get svc -n trainer
+ 1959  curl app1s1
+ 1960  curl 10.108.43.64
+ 1961  kubectl get pods -n trainer
+ 1962  kubectl describe svc app1s1
+ 1963  kubectl describe svc app1s1 -n trainer
+ 1964  clear
+ 1965  kubectl run p1 --image=httpd
+ 1966  oc expose pod/p1 --name=p1s1 --type=ClusterIP --port=80 --target-port=80
+ 1967  kubectl get nodes
+ 1968  kubectl get svc
+ 1969  kubectl get pods -o wide
+ 1970  curl 10.244.1.58
+ 1971  curl p1s1
+ 1972  curl 10.101.93.21
+ 1973  curl p1.svc.cluster.local
+ 1974  curl p1s1.default.svc.cluster.local
+ 1975  nslookup p1s1.default.svc.cluster.local
+ 1976  nslookup p1s1.svc.cluster.local
+ 1977  kubectl exec -it p1 bash
+ 1978  kubectl exec -it p1 -- bash
+ 1979  nslookup p1s1.svc.cluster.local
+ 1980  curl p1s1.svc.cluster.local
+ 1981  curl p1s1.svc.cluster.local:80
+ 1982  kubectl get svc -n kube-system kube-dns
+ 1983  curl http://p1s1.default.svc.cluster.local
+ 1984  curl http://p1s1.default.svc.cluster.local:80
+ 1985  curl --dns-servers 10.96.0.10 http://p1s1.default.svc.cluster.local:80
+ 1986  ping p1s1.default.svc.cluster.local
+ 1987  kubectl get endpoints p1s1
+ 1988  kubectl get pods
+ 1989  kubectl exec -it app1-75958ccc-n9gwb -- bash
+ 1990  kubectl get pods
+ 1991  kubectl exec -it app1-75958ccc-n9gwb -- bash
+ 1992  clear
+ 1993  oc apply -f https://raw.githubusercontent.com/hitachi/hspc-csi-driver/master/deploy/kubernetes/all.yaml
+ 1994  top
+ 1995  exit
+ 1996  top
+ 1997  exit
+ 1998  clear
+ 1999  history
+root@master:~# cd /
+root@master:/#
